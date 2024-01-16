@@ -258,6 +258,7 @@ DEPENDENCIES
   dockerfile-rails (>= 1.6)
   importmap-rails
   jbuilder
+  mini_magick
   net-ssh
   pg (~> 1.1)
   puma (>= 5.0)

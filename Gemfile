@@ -9,6 +9,7 @@ gem "rails", "~> 7.1.2"
 gem "sprockets-rails"
 gem "net-ssh"
 gem "carrierwave"
+gem "mini_magick"
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
 
