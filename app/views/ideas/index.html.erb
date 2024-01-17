@@ -1,11 +1,17 @@
+<% if notice %>
+ <div class="alert alert-success" role="alert">
+ <%= notice %>
+ </div>
+<% end %>
 
-<p style="color: green"><%= notice %></p>
+<h1 class="text-center my-4">Ideas</h1>
 
-<h1>Ideas</h1>
-<%= link_to "Add a new idea", new_idea_path, class: "btn btn-primary mb-3" %>
+<%= link_to "Add a new idea", new_idea_path, class: "btn btn-primary mb-3 d-block mx-auto" %>
 
-<div class="list-group w-auto">
-  <% @ideas.each do |idea| %>
-    <%= render idea %>
-  <% end %>
+<div class="d-flex flex-column align-items-center">
+ <% @ideas.each do |idea| %>
+ <div class="card mb-4 idea-card shadow p-3" style="width: 80%; transition: background-color 0.5s ease;" onmouseover="this.style.backgroundColor='#e8eaec'" onmouseout="this.style.backgroundColor='white'">
+ <%= render idea %>
+ </div>
+ <% end %>
 </div>
